@@ -4,12 +4,16 @@ class Item {
   String imageUrl;
   String description;
   double rating;
+  int stock;
+  String category;
 
   Item({
-    this.name = '',
-    this.price = 0,
-    this.imageUrl = '',
-    this.description = '',
-    this.rating = 0.0,
+    required this.name,
+    required this.price,
+    required this.imageUrl,
+    required this.description,
+    required this.rating,
+    required this.stock,
+    this.category = 'Fashion',
   });
 }
